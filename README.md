@@ -21,3 +21,8 @@
 
 ## 部署
 Nginx + FastCGI + Flup + Web.py + Python3
+
+
+## 设计
+1. 静态文件懒加载
+2. Restful - 异步文件下载
