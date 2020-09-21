@@ -10,10 +10,9 @@ angular.module('home').component('home', {
             homeService.file($.param({
                 'a': '123'
             })).$promise.then(function(resp) {
-                c_type = resp.$httpHeaders['content-type']
+                c_type = resp.$httpHeaders['content-type'];
                 //                    f_name = window.decodeURI(resp.$httpHeaders['content-disposition'].split('=')[1].replace(/^\s*|\s*$/g,""), "UTF-8");
                 f_name = resp.$httpHeaders['content-disposition'].split('=')[1];
-                console.log(f_name, c_type);
                 var blob = new Blob([resp.$httpData], {
                     type: c_type
                 });
@@ -29,7 +28,6 @@ angular.module('home').component('home', {
                     a.click();
                     $(a).remove();
                 }
-
                 return resp
             });
         }
