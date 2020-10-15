@@ -29,5 +29,6 @@ Nginx + FastCGI + Flup + Web.py + Python3
 
 
 ## 运行，访问
-nohup python3 main.py fastcgi 9003 &
-http://127.0.0.1:9001
+1. 使用conf 部署配置nginx
+2. 后台启动：nohup python3 main.py fastcgi 9003 &
+3. 访问：http://127.0.0.1:9001
