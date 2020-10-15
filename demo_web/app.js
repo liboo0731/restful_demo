@@ -11,7 +11,8 @@ define([
 				'home']);
 		
 //		brzModule.constant('basePath',location.protocol+'//'+location.host);
-		brzModule.constant('basePath',location.protocol+'//'+location.hostname+':9002');
+//		brzModule.constant('basePath',location.protocol+'//'+location.hostname+':9002');
+		brzModule.constant('basePath','http://127.0.0.1:9002');
 
 		brzModule.config(['$compileProvider','$httpProvider','$qProvider','$stateProvider',function($compileProvider,$httpProvider,$qProvider,$stateProvider){
 			$compileProvider.debugInfoEnabled(false);
