@@ -26,3 +26,8 @@ Nginx + FastCGI + Flup + Web.py + Python3
 ## 设计
 1. 静态文件懒加载
 2. Restful - 异步文件下载
+
+
+## 运行，访问
+nohup python3 main.py fastcgi 9003 &
+http://127.0.0.1:9001
